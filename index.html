@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png" href="aplicativo-de-clima.png">
+    <title>Estações</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="index.js" defer></script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+    
+body{
+background-color: #F2B979;
+}
+
+h1{
+font-family: 'Quicksand', sans-serif;
+text-shadow: 9px 5px 10px rgba(126, 126, 150, 0.5);
+}
+
+div{
+width: 300px;
+margin: auto;
+}
+
+input{
+background: transparent;
+padding: 15px;
+box-sizing: border-box;
+border: transparent;
+border-bottom: 2px solid #e6a152;
+}
+
+input[type=text]{
+box-sizing: border-box;
+background-color: transparent;
+}
+
+button{
+margin-left: 5px;
+padding: 15px;
+border-radius: 15px;
+box-sizing: border-box;
+border: transparent;
+box-shadow: 13px 6px 0px -1px #e6a152;
+-webkit-box-shadow: 13px 6px 0px -1px #e6a152;
+-moz-box-shadow: 13px 6px 0px -1px #e6a152;
+}
+
+img{
+width: 450px;
+height: 450px;
+object-fit: cover;
+}
+
+</style>
+</head>
+<body>
+
+<div id="season">
+  <input v-model="input" type="text" placeholder="Digite uma estação">
+  <button @click="verificarTexto">Enviar</button>
+  <h1> {{texto}} </h1>
+  <img :src="img" alt="">
+</div>
+
+    
+</body>
+</html>
