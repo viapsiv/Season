@@ -5,12 +5,14 @@ data(){
         input:"",
         img:"",
         texto: "",
+        mostrar: false;
 
 }
  },
     methods: {
         verificarTexto(e){
             e.preventDefault();
+            mostrar = true
             if(this.input === "verão"){
                 this.texto = "O verão está chegando. Pra praia desce geral"
                 this.img = "https://g3i5r4x7.rocketcdn.me/wp-content/uploads/2020/04/verao-caracteristicas-quando-ocorre-solsticio-e-horario-de-verao.jpg"
