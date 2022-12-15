@@ -33,8 +33,6 @@ data(){
                 this.img= "https://www.laboratoriocoffers.com.br/wp-content/uploads/2019/11/primavera1.jpg"
           
             }
-
-                this.input = " "
          } 
     }
  }
